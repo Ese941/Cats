@@ -1,0 +1,113 @@
+# PART ONE
+
+
+#Task 1: Adding even numbers
+# total=0
+# for number in range(1,101):
+#     if number %2 ==0:
+#         total +=number
+# print(total)
+
+
+
+#Task 2: Fizz-Buzz 
+# for number in range(1,101):
+#     if number  %3 and number %5 ==0:
+#         print("FizzBuzz") 
+#     elif number %3 ==0:
+#         print("Fizz")
+#     elif number %5 ==0:
+#         print("Buzz")
+
+
+#Task 3: Password Generator App
+# import random
+# letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+# numbers = "0123456789"
+# symbols = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+# combo= letters + numbers + symbols
+# password=""
+# user=int(input("What is your desired password length?   "))
+# for i in range(0,user):
+#     passkey=random.choice(combo)
+#     password +=passkey
+
+# print(password)
+
+
+
+
+
+
+
+#  PART TWO
+
+
+
+#Task 1
+#def sum_list(numbers):
+    #return sum(numbers)
+
+#numbers=[6,7,3,4,8,9]
+#print(sum_list(numbers))
+
+
+#Task 2
+#def celsuis_to_fahrenheit(celsuis):
+    #fahrenheit= (celsuis *9/5) + 32
+    #return fahrenheit
+#user=float(input("Enter your temperature in celsuis: "))
+#print(f"The temperature in fahrenheit is {celsuis_to_fahrenheit(user)} ")
+
+
+#Task 3
+#import random
+#computer_choice= random.randint(1,10)
+#user_choice=0
+#while computer_choice != user_choice:
+    #user_choice=int(input("Guess a number between 1-10 "))
+    #if user_choice < computer_choice:
+        #print("Too low")
+    #elif user_choice > computer_choice:
+        #print("Too high")
+
+#print("Congratulations you won!")
+
+
+#Task 4 Calculator app
+
+
+def add(a,b):
+    return a + b
+
+def subtract(a,b):
+    return a - b
+
+def multiply(a,b):
+    return a * b
+
+def divide(a,b):
+    return a / b
+print("This calculator app can only perform the following operations;\n 1. Add\n 2. Subtract\n 3. Multiply\n 4. Divide \n".lower())
+
+while True:
+    user=(input("Select the operation (1/2/3/4): "))
+    if user in ("1", "2", "3", "4"):
+        number_1=float(input("Enter your first number: "))
+        number_2=float(input("Enter your second number: "))
+        if user == "1":
+            print(number_1, "+", number_2, "=", add(number_1,number_2))
+        elif user == "2":
+            print(number_1, "-", number_2, "=", subtract(number_1,number_2))
+        elif user == "3":
+            print(number_1, "*", number_2, "=", multiply(number_1,number_2))
+        elif user == "4":
+            print(number_1, "/", number_2, "=", divide(number_1,number_2))
+        break
+    else:
+        print("Input is invalid!!")
+
+
+
+
+ 
