@@ -1,0 +1,34 @@
+#PROJECT 1
+#STUDENT GRADE MANAJGEMENT
+student_grade= {"Ayomide": "90,60",
+                "Ireti": "86,75",
+                "Evelyn": "90,79",
+                "Christianna": "80,65",
+                "Astra": "74,82",
+                "Zion": "69,78",
+                "Francis": "45,62"}
+print(student_grade)
+user=input("Which of these operation would you like to carry out: \n 1.Add a student \n 2.Update grades \n 3.View a particular student grade \n 4.Calculate average grade \n")
+if user == "1":
+    name=input("Input the name of the  new student: \n")
+    grade=input("Input the grades of each new student respectively: \n")
+    student_grade.update({name : grade})
+    print(student_grade)
+
+if user == "2":
+    name=input("What student grade do you want to modify? \n")
+    grade=input("What is the new grade: ")
+    student_grade.update({name : grade})
+    print(student_grade)
+
+if user == "3":
+    name=input("What is the name of the student: ")
+    print(student_grade.get(name))
+
+if user == "4":
+    name=input("Which of the student's average grade do you want to calculate: ")
+    average_grade=
+
+
+
+
