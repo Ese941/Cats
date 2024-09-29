@@ -1,0 +1,43 @@
+#PROJECT 2
+#THE SECRET AUCTION PROGRAM
+name_bid={}
+print("Only six people can bid using this app!")
+
+user=input("Each person will be assigned a number ranging from 1-6 by the lady on the red table, input your respective number to bid: \n")
+name=input("Enter your name: \n")
+bid=(input("Enter the amount you want to bid: \n"))
+name_bid.update({name : bid})
+
+
+user=input("Each person will be assigned a number ranging from 1-6 by the lady on the red table, input your respective number to bid: \n")
+name=input("Enter your name: \n")
+bid=(input("Enter the amount you want to bid: \n"))
+name_bid.update({name : bid})
+
+
+user=input("Each person will be assigned a number ranging from 1-6 by the lady on the red table, input your respective number to bid: \n")
+name=input("Enter your name: \n")
+bid=(input("Enter the amount you want to bid: \n"))
+name_bid.update({name : bid})
+
+
+user=input("Each person will be assigned a number ranging from 1-6 by the lady on the red table, input your respective number to bid: \n")
+name=input("Enter your name: \n")
+bid=(input("Enter the amount you want to bid: \n"))
+name_bid.update({name : bid})
+
+
+user=input("Each person will be assigned a number ranging from 1-6 by the lady on the red table, input your respective number to bid: \n")
+name=input("Enter your name: \n")
+bid=(input("Enter the amount you want to bid: \n"))
+name_bid.update({name : bid})
+
+
+user=input("Each person will be assigned a number ranging from 1-6 by the lady on the red table, input your respective number to bid: \n")
+name=input("Enter your name: \n")
+bid=(input("Enter the amount you want to bid: \n"))
+name_bid.update({name : bid})
+
+highest_bid=max(name_bid.values())
+winner=max(name_bid, key=name_bid.get)
+print(f"The highest bidder is {winner} and the winning bid amount is : {highest_bid}")
